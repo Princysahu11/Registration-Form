@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1 >Student Registration Form</h1> 
+    <div class="form">
+        <table>
+            <thead>
+                <tr><th> Name :</th>
+                    <td> <input type ="text" name="name " id="name" placeholder="Enter your name"> </td>
+                </tr>
+            
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Email :</th>
+                    <td> <input type ="email" name="email" id="email" placeholder="Enter your mail-id"> </td>
+
+                </tr>
+
+                <tr>
+                    <th>Website :</th>
+                    <td> <input type ="text" name="add" id="add" placeholder="Enter your website"> </td>
+
+                </tr>
+                <tr>
+                    <th> Gender :</th>
+                    <td> <select id="sex" name ="sex">
+                        <option selected =" " value="Default"> Select Gender</option>
+                        <option value="Male"> Male</option>
+                        <option value="Female"> Female</option>
+
+
+                    </select>
+                </tr>
+
+                <tr>
+                    <th> Skills :</th>
+                    <td> <select id="skills" name="skills">
+                        <option selected =" " value="Default"> Good in</option>
+                        <option value=" Html"> HTML</option>
+                        <option value=" CSS"> CSS</option>
+                        <option value=" JAVA"> JAVA</option>
+                        <option value=" Javascript"> Javascript</option>
+
+
+
+
+                    </select></td>
+                </tr>
+                <tr> 
+                    <td><input type="submit" name="button" id ="btn" value="Enroll Student" onclick="AddRow()"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+<h2>  Enrolled Students :-</h2>
+    
+<table id="display">
+    <thead id="head">
+
+        <tr>
+            <th> Name</th>
+            <th> Email</th>
+            <th> Website</th>
+            <th> Gender</th>
+            <th> Skills</th>
+
+    
+    
+        </tr>
+
+
+
+    </thead>
+</table>
+
+
+
+
+        </div>
+    </div>
+
+    <script src ="index.js"> </script>
+</body>
+</html>
